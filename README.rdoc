@@ -1,0 +1,44 @@
+# Loggerextend allows you to add custom reporting levels to Ruby's built-in Logger facility.
+# The new levels behave just like the existing ones.
+#
+# Author::      John Messenger
+# Copyright::   Copyright (c) 2010 John Messenger
+# License::     MIT License
+#
+#= Example
+#  require 'logger'
+#  require 'loggerextend'
+#
+#  LoggerExtend.loggerextend("NOTE", "WARN")
+#
+#  $log = Logger.new(STDOUT)
+#  $log.debug("this is a debug")
+#  $log.info("this is a info")
+#  # This is the new one:
+#  $log.note("this is a note")
+#  #
+#  $log.warn("this is a warn")
+#  $log.error("this is a error")
+#  $log.fatal("this is a fatal")
+#
+#= License
+#
+#Copyright (c) 2010 John Messenger
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
