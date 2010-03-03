@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rake'
 require 'rake/gempackagetask'
+require 'rake/rdoctask'
 
 spec = Gem::Specification.new do |s|
   s.name = %q{loggerextend}
@@ -21,6 +22,11 @@ end
 
 Rake::GemPackageTask.new(spec) do |pkg|
   pkg.need_tar = true
+end
+
+Rake::RDocTask.new do |rd|
+  rd.main = "README.rdoc"
+  rd.rdoc_files.include("README.rdoc", "lib/**/*.rb")
 end
 
 task :test do
